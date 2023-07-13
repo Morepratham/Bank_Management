@@ -14,6 +14,7 @@ public class BankManager {
 	private int manager_id;
 	private String manager_name;
 	private String manager_email;
+	private String manager_passwaord;
 	
 	@ManyToMany
 //	private List<BankCustomer> bankCustomer;
@@ -41,6 +42,13 @@ public class BankManager {
 	}
 	public void setManager_email(String manager_email) {
 		this.manager_email = manager_email;
+	}
+	
+	public String getManager_passwaord() {
+		return manager_passwaord;
+	}
+	public void setManager_passwaord(String manager_passwaord) {
+		this.manager_passwaord = manager_passwaord;
 	}
 	public Bank getBank() {
 		return bank;

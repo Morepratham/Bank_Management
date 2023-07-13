@@ -15,6 +15,7 @@ public class BankCustomer {
 	private String cust_name;
 	private String cust_gender;
 	private String cust_email;
+	private String cust_password;
 	private String cust_status;
 	
 	@OneToOne(cascade = CascadeType.ALL)
@@ -50,6 +51,12 @@ public class BankCustomer {
 	}
 	public void setCust_email(String cust_email) {
 		this.cust_email = cust_email;
+	}
+	public String getCust_password() {
+		return cust_password;
+	}
+	public void setCust_password(String cust_password) {
+		this.cust_password = cust_password;
 	}
 	public String getCust_status() {
 		return cust_status;

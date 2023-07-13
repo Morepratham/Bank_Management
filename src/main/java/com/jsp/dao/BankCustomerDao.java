@@ -60,6 +60,9 @@ public class BankCustomerDao {
 			if (person.getCust_status() != null) {
 				p1.setCust_status(p1.getCust_status());
 			}
+			if (person.getCust_password() != null) {
+				p1.setCust_password(p1.getCust_password());
+			}
 			entityManager.persist(p1);
 			entityTransaction.commit();
 			return p1;
